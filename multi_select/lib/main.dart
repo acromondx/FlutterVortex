@@ -54,8 +54,7 @@ class _MultiSelectState extends State<MultiSelect> {
               ),
         body: ListView(
           children: [
-            const SizedBox(height: 20),
-            const SizedBox(height: 10),
+            const SizedBox(height: 30),
             ListView.separated(
               shrinkWrap: true,
               physics: const NeverScrollableScrollPhysics(),
@@ -135,7 +134,6 @@ class PrettyCard extends StatelessWidget {
 }
 
 class Course {
-  static bool selected = false;
   final String id;
   final String name;
   Course({
