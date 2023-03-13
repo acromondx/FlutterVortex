@@ -1,3 +1,3 @@
 # DEMO 🥳
 
-![](ezgif-5-774b0d4900.gif)
+![demo](ezgif-5-774b0d4900.gif)
