@@ -26,7 +26,6 @@ class _MultiSelectState extends State<MultiSelect> {
         appBar: trashCan.isEmpty
             ? AppBar(
                 title: const Text('Multi-Delete'),
-                actions: const [],
                 centerTitle: true,
                 backgroundColor: Colors.grey.shade900,
               )
