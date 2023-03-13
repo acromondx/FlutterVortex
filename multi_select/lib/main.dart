@@ -44,12 +44,10 @@ class _MultiSelectState extends State<MultiSelect> {
                 actions: [
                   IconButton(
                       onPressed: () {
-                        for (var trashItem in trashCan) {
-                          coursesData.removeWhere(
-                              (course) => course.id == trashItem.id);
-                          trashCan.clear();
-                          setState(() {});
-                        }
+                        coursesData
+                            .removeWhere((item) => trashCan.contains(item));
+                        trashCan.clear();
+                        setState(() {});
                       },
                       icon: const Icon(Icons.delete))
                 ],
